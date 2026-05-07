@@ -41,7 +41,7 @@ body {
 .layout {
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
-  align-items: center;
+  align-items: start;
   margin-top: 100px;
 }
 
@@ -68,6 +68,11 @@ body {
 }
 
 .logo:hover { transform: scale(1.15); }
+
+/* LOGHI INFERIORI */
+.logo.inferiore {
+  margin-top: 150px;
+}
 
 /* EFFETTI GLOW */
 img[alt="Culo Cup"]:hover     { box-shadow: 0 0 20px gold; }
@@ -121,7 +126,7 @@ select {
   <!-- SINISTRA -->
   <div class="side">
     <a href="culocup.html"><img src="culocup.png" class="logo" alt="Culo Cup"></a>
-    <a href="supercup.html"><img src="supercup.png" class="logo" alt="SuperCup"></a>
+    <a href="supercup.html"><img src="supercup.png" class="logo inferiore" alt="SuperCup"></a>
   </div>
 
   <!-- CENTRO -->
@@ -145,7 +150,7 @@ select {
   <!-- DESTRA -->
   <div class="side">
     <a href="vomitocup.html"><img src="vomitocup.png" class="logo" alt="Vomito Cup"></a>
-    <a href="mezzapiotta.html"><img src="mezzapiotta.png" class="logo" alt="Mezzapiotta"></a>
+    <a href="mezzapiotta.html"><img src="mezzapiotta.png" class="logo inferiore" alt="Mezzapiotta"></a>
   </div>
 </div>
 
