@@ -46,12 +46,19 @@ body {
   padding: 20px;
 }
 
-/* LOGO PRINCIPALE */
+/* LOGO PRINCIPALE CLICCABILE */
 .main-logo {
   width: 250px;
   margin: 30px 0;
   border-radius: 12px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+}
+
+.main-logo:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(255, 255, 255, 0.3);
 }
 
 /* TABELLE */
@@ -70,7 +77,7 @@ table {
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
-  min-width: 1100px;
+  min-width: 950px; 
 }
 
 .palmares-table {
@@ -78,20 +85,26 @@ table {
 }
 
 th, td {
-  padding: 15px 12px;
+  padding: 10px 8px;
   border: 2px solid white;
   text-align: center;
-  font-size: 15px;
+  font-size: 14px;
 }
 
 th {
   background-color: rgba(0, 0, 0, 0.6);
   font-weight: bold;
-  font-size: 16px;
+  font-size: 15px;
 }
 
 tr:hover {
   background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Stile per dati mancanti e trattini in BLU */
+.info-vuota {
+  color: #0000ff;
+  font-weight: bold;
 }
 
 .palmares-title {
@@ -109,11 +122,6 @@ tr:hover {
 @keyframes glow {
   from { text-shadow: 0 0 10px black; }
   to   { text-shadow: 0 0 25px white; }
-}
-
-.logo-cup:hover {
-  transform: scale(1.2);
-  box-shadow: 0 0 20px white;
 }
 
 /* BACK BUTTON */
@@ -144,18 +152,17 @@ tr:hover {
 </head>
 <body>
 
-<!-- HEADER -->
 <div class="header">
   <img src="culocup.png" class="logo-cup sinistra" alt="Culo Cup Logo">
   <h1 class="titolo">CULO CUP</h1>
   <img src="culocup.png" class="logo-cup destra" alt="Culo Cup Logo">
 </div>
 
-<!-- CONTENUTO -->
 <div class="container">
-  <img src="culocuplogo.png" class="main-logo" alt="Culo Cup Logo">
+  <a href="culocuplogo.png" target="_blank">
+    <img src="culocuplogo.png" class="main-logo" alt="Culo Cup Logo">
+  </a>
   
-  <!-- TABELLA ALLENATORI E VINCITORI -->
   <div class="tabella-container">
     <table>
       <thead>
@@ -175,23 +182,23 @@ tr:hover {
           <td>Dario</td>
           <td>1-0</td>
           <td>Iss Pro</td>
-          <td>-</td>
+          <td>Francesco</td>
         </tr>
         <tr>
           <td>2012-13</td>
           <td>Winning Eleven</td>
           <td>Dario</td>
-          <td>Dati mancanti</td>
-          <td>Dati mancanti</td>
-          <td>-</td>
+          <td class="info-vuota">Dati mancanti</td>
+          <td class="info-vuota">Dati mancanti</td>
+          <td class="info-vuota">-</td>
         </tr>
         <tr>
           <td>2013-14</td>
           <td>Competition</td>
           <td>Valerio G.</td>
-          <td>Dati mancanti</td>
-          <td>Dati mancanti</td>
-          <td>-</td>
+          <td class="info-vuota">Dati mancanti</td>
+          <td class="info-vuota">Dati mancanti</td>
+          <td class="info-vuota">-</td>
         </tr>
         <tr>
           <td>2014-15</td>
@@ -205,9 +212,9 @@ tr:hover {
           <td>2015-16</td>
           <td>57 Boys</td>
           <td>Paolo</td>
-          <td>Dati mancanti</td>
-          <td>Dati mancanti</td>
-          <td>-</td>
+          <td class="info-vuota">Dati mancanti</td>
+          <td class="info-vuota">Dati mancanti</td>
+          <td class="info-vuota">-</td>
         </tr>
         <tr>
           <td>2016-17</td>
@@ -296,46 +303,16 @@ tr:hover {
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <td>Paolo</td>
-          <td>3</td>
-        </tr>
-        <tr>
-          <td>Alex</td>
-          <td>2</td>
-        </tr>
-        <tr>
-          <td>Dario</td>
-          <td>2</td>
-        </tr>
-        <tr>
-          <td>Binomio</td>
-          <td>1</td>
-        </tr>
-        <tr>
-          <td>Damiano</td>
-          <td>1</td>
-        </tr>
-        <tr>
-          <td>Daniele</td>
-          <td>1</td>
-        </tr>
-        <tr>
-          <td>Demo</td>
-          <td>1</td>
-        </tr>
-        <tr>
-          <td>Francesco</td>
-          <td>1</td>
-        </tr>
-        <tr>
-          <td>Franz</td>
-          <td>1</td>
-        </tr>
-        <tr>
-          <td>Valerio G.</td>
-          <td>1</td>
-        </tr>
+        <tr><td>Paolo</td><td>3</td></tr>
+        <tr><td>Alex</td><td>2</td></tr>
+        <tr><td>Dario</td><td>2</td></tr>
+        <tr><td>Binomio</td><td>1</td></tr>
+        <tr><td>Damiano</td><td>1</td></tr>
+        <tr><td>Daniele</td><td>1</td></tr>
+        <tr><td>Demo</td><td>1</td></tr>
+        <tr><td>Francesco</td><td>1</td></tr>
+        <tr><td>Franz</td><td>1</td></tr>
+        <tr><td>Valerio G.</td><td>1</td></tr>
       </tbody>
     </table>
   </div>
@@ -348,4 +325,4 @@ tr:hover {
 </div>
 
 </body>
-</html>
+    </html>
