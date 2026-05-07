@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<title>Culo Cup</title>
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #ff5ca8;
+  color: white;
+  text-align: center;
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 60px;
+  gap: 30px;
+}
+
+.logo-cup {
+  width: 120px;
+  opacity: 0;
+  animation: entraLogo 1s ease forwards;
+}
+
+.logo-cup.sinistra { transform: translateX(-50px); }
+.logo-cup.destra { transform: translateX(50px); }
+
+.titolo {
+  font-size: 60px;
+  margin: 0;
+  text-shadow: 2px 2px 10px black;
+  animation: glow 2s infinite alternate;
+}
+
+/* ANIMAZIONI */
+@keyframes entraLogo {
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes glow {
+  from { text-shadow: 0 0 10px black; }
+  to   { text-shadow: 0 0 25px white; }
+}
+
+.logo-cup:hover {
+  transform: scale(1.2);
+  box-shadow: 0 0 20px white;
+}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<div class="header">
+  <img src="culocup.png" class="logo-cup sinistra" alt="Culo Cup Logo">
+  <h1 class="titolo">CULO CUP</h1>
+  <img src="culocup.png" class="logo-cup destra" alt="Culo Cup Logo">
+</div>
+
+</body>
+</html>
