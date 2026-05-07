@@ -37,6 +37,56 @@ body {
   animation: glow 2s infinite alternate;
 }
 
+/* CONTENUTO PRINCIPALE */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  padding: 20px;
+}
+
+/* LOGO PRINCIPALE */
+.main-logo {
+  width: 250px;
+  margin: 30px 0;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* TABELLA */
+.tabella-container {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+table {
+  border-collapse: collapse;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+th, td {
+  padding: 15px 20px;
+  border: 2px solid white;
+  text-align: center;
+  font-size: 16px;
+}
+
+th {
+  background-color: rgba(0, 0, 0, 0.6);
+  font-weight: bold;
+  font-size: 18px;
+}
+
+tr:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
 /* ANIMAZIONI */
 @keyframes entraLogo {
   to { opacity: 1; transform: translateX(0); }
@@ -51,6 +101,23 @@ body {
   transform: scale(1.2);
   box-shadow: 0 0 20px white;
 }
+
+/* BACK BUTTON */
+.back-button {
+  padding: 10px 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: 2px solid white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s;
+}
+
+.back-button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: scale(1.05);
+}
 </style>
 </head>
 <body>
@@ -60,6 +127,35 @@ body {
   <img src="culocup.png" class="logo-cup sinistra" alt="Culo Cup Logo">
   <h1 class="titolo">CULO CUP</h1>
   <img src="culocup.png" class="logo-cup destra" alt="Culo Cup Logo">
+</div>
+
+<!-- CONTENUTO -->
+<div class="container">
+  <img src="culocuplogo.png" class="main-logo" alt="Culo Cup Logo">
+  
+  <!-- TABELLA - DA AGGIORNARE CON I DATI -->
+  <div class="tabella-container">
+    <table>
+      <thead>
+        <tr>
+          <th>Anno</th>
+          <th>Campione</th>
+          <th>Finalista</th>
+          <th>Risultato</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>2024</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <button class="back-button" onclick="history.back()">← Torna Indietro</button>
 </div>
 
 </body>
