@@ -26,6 +26,15 @@ body{
 }
 
 /* TITOLO EPICO */
+    <div class="supercup-header">
+
+    <img src="supercup.png" class="supercup-logo" alt="SuperCup">
+
+    <h1 class="supercup-title">SUPERCUP</h1>
+
+    <img src="supercup.png" class="supercup-logo" alt="SuperCup">
+
+</div>
 
 .supercup-title{
     font-size:72px;
@@ -64,7 +73,46 @@ body{
     box-shadow:0 0 25px rgba(255,215,0,0.5);
     margin-bottom:50px;
 }
+.supercup-header{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:25px;
+    margin-top:20px;
+    margin-bottom:25px;
+}
 
+.supercup-logo{
+    width:90px;
+    height:auto;
+
+    filter:
+        drop-shadow(0 0 10px rgba(255,215,0,0.8))
+        drop-shadow(0 0 20px rgba(255,215,0,0.5));
+}
+
+.supercup-title{
+    font-size:72px;
+    font-weight:bold;
+    letter-spacing:5px;
+
+    background:linear-gradient(
+        180deg,
+        #fff8c7 0%,
+        #ffd700 40%,
+        #d4a000 70%,
+        #8b6508 100%
+    );
+
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+
+    text-shadow:
+        0 0 5px rgba(255,215,0,0.8),
+        0 0 10px rgba(255,215,0,0.7),
+        0 0 20px rgba(255,215,0,0.6),
+        4px 4px 8px rgba(0,0,0,0.8);
+}
 .supercup-table th{
     background:linear-gradient(
         180deg,
