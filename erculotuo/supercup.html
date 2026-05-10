@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<!-- saved from url=(0055)https://fantalbodoro.github.io/erculotuo/vomitocup.html -->
+<html lang="it"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Vomito Cup</title>
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #ff5ca8;
+  color: white;
+  text-align: center;
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 60px;
+  gap: 30px;
+}
+
+.logo-cup {
+  width: 120px;
+  opacity: 0;
+  animation: entraLogo 1s ease forwards;
+}
+
+.logo-cup.sinistra { transform: translateX(-50px); }
+.logo-cup.destra { transform: translateX(50px); }
+
+.titolo {
+  font-size: 60px;
+  margin: 0;
+  text-shadow: 2px 2px 10px black;
+  animation: glow 2s infinite alternate;
+}
+
+/* CONTENUTO PRINCIPALE */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  padding: 20px;
+}
+
+/* LOGO PRINCIPALE CLICCABILE */
+.main-logo {
+  width: 250px;
+  margin: 30px 0;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+}
+
+.main-logo:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(255, 255, 255, 0.3);
+}
+
+/* TABELLE */
+.tabella-container {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+  overflow-x: auto;
+  width: 100%;
+}
+
+table {
+  border-collapse: collapse;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  min-width: 950px; 
+}
+
+.palmares-table {
+  min-width: 500px;
+}
+
+th, td {
+  padding: 10px 8px;
+  border: 2px solid white;
+  text-align: center;
+  font-size: 14px;
+}
+
+th {
+  background-color: rgba(0, 0, 0, 0.6);
+  font-weight: bold;
+  font-size: 15px;
+}
+
+tr:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.palmares-title {
+  font-size: 48px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 10px black;
+}
+
+/* ANIMAZIONI */
+@keyframes entraLogo {
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes glow {
+  from { text-shadow: 0 0 10px black; }
+  to   { text-shadow: 0 0 25px white; }
+}
+
+/* BACK BUTTON */
+.back-button {
+  padding: 10px 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: 2px solid white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s;
+}
+
+.back-button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: scale(1.05);
+}
+
+/* NOTA DATI MANCANTI */
+.nota {
+  font-size: 14px;
+  margin-top: 20px;
+  color: #ffff99;
+  font-style: italic;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <img src="./vomitocup_files/vomitocup.png" class="logo-cup sinistra" alt="Vomito Cup Logo">
+  <h1 class="titolo">VOMITO CUP</h1>
+  <img src="./vomitocup_files/vomitocup.png" class="logo-cup destra" alt="Vomito Cup Logo">
+</div>
+
+<div class="container">
+  <a href="./vomitocup_files/vomitocuplogo.png" target="_blank">
+    <img src="./vomitocup_files/vomitocuplogo.png" class="main-logo" alt="Vomito Cup Logo">
+  </a>
+  
+  <div class="tabella-container">
+    <table>
+      <thead>
+        <tr>
+          <th>Stagione</th>
+          <th>Squadra Vincitrice</th>
+          <th>Allenatore</th>
+          <th>Risultato</th>
+          <th>Squadra Finalista</th>
+          <th>Allenatore</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>2022-23</td>
+          <td>Bayer Lavinkusen</td>
+          <td>Francesco</td>
+          <td>1-1 (5-4 dcr)</td>
+          <td>FC Fornaretto</td>
+          <td>Simone</td>
+        </tr>
+        <tr>
+          <td>2023-24</td>
+          <td>Winning Eleven</td>
+          <td>Dario</td>
+          <td>1-1 (5-1 dts)</td>
+          <td>Bayer Lavinkusen</td>
+          <td>Francesco</td>
+        </tr>
+        <tr>
+          <td>2024-25</td>
+          <td>Stoke Azzo</td>
+          <td>Binomio</td>
+          <td>3-1</td>
+          <td>Winning Eleven</td>
+          <td>Dario</td>
+        </tr>
+        <tr>
+          <td>2025-26</td>
+          <td>FC Fornaretto</td>
+          <td>Simone</td>
+          <td>2-2 (12-11 dcr)</td>
+          <td>Scarsenal</td>
+          <td>Andrea</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2 class="palmares-title">PALMARES</h2>
+
+  <div class="tabella-container">
+    <table class="palmares-table">
+      <thead>
+        <tr>
+          <th>Allenatore</th>
+          <th>Titoli Vinti</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Binomio</td><td>1</td></tr>
+        <tr><td>Dario</td><td>1</td></tr>
+        <tr><td>Francesco</td><td>1</td></tr>
+        <tr><td>Simone</td><td>1</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="nota">
+    Legenda: dts = dopo i tempi supplementari | dcr = dopo i calci di rigore
+  </div>
+
+  <button class="back-button" onclick="history.back()">← Torna Indietro</button>
+</div>
+
+
+                           
+</body></html>
