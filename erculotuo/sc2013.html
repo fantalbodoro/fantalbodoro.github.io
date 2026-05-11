@@ -50,7 +50,9 @@ body{
 }
 
 .table-container{
-    width:95%;
+    width:auto;
+    display:flex;
+    justify-content:center;
     margin:auto;
     overflow-x:auto;
 }
@@ -63,6 +65,7 @@ table{
     border:2px solid gold;
     box-shadow:0 0 25px rgba(255,215,0,0.5);
     margin-bottom:40px;
+    table-layout:auto;
 }
 
 th{
@@ -76,12 +79,12 @@ th{
     );
 
     color:black;
-    padding:14px;
+    padding:6px 5px;
     text-transform:uppercase;
 }
 
 td{
-    padding:8px 6px;
+    padding:5px 4px;
     white-space:nowrap;
     border:1px solid rgba(255,215,0,0.4);
 }
