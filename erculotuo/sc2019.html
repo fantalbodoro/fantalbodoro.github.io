@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<title>SuperCup 2019</title>
+
+<style>
+
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:
+        radial-gradient(circle at top, #3a2a00 0%, #120b00 40%, #000 100%);
+    color:white;
+    text-align:center;
+}
+
+.page-title{
+    font-size:60px;
+    margin-top:30px;
+    margin-bottom:10px;
+
+    background:linear-gradient(
+        180deg,
+        #fff8c7 0%,
+        #ffd700 40%,
+        #d4a000 70%,
+        #8b6508 100%
+    );
+
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+
+    text-shadow:
+        0 0 5px rgba(255,215,0,0.8),
+        0 0 10px rgba(255,215,0,0.7),
+        0 0 20px rgba(255,215,0,0.6),
+        4px 4px 8px rgba(0,0,0,0.8);
+}
+
+.match-result{
+    font-size:34px;
+    font-weight:bold;
+    margin-bottom:25px;
+}
+
+.table-container{
+    width:auto;
+    display:flex;
+    justify-content:center;
+    margin:auto;
+    overflow-x:auto;
+}
+
+table{
+    width:auto;
+    margin:auto;
+    table-layout:auto;
+    border-collapse:collapse;
+    background:rgba(0,0,0,0.35);
+    border:2px solid gold;
+    box-shadow:0 0 25px rgba(255,215,0,0.5);
+    margin-bottom:40px;
+}
+
+th{
+    padding:6px 5px;
+    white-space:nowrap;
+    background:linear-gradient(180deg,#ffd700 0%,#b8860b 100%);
+    color:black;
+    text-transform:uppercase;
+    border-right:4px solid black;
+}
+
+th:last-child{border-right:none;}
+
+td{
+    padding:5px 4px;
+    white-space:nowrap;
+    border:1px solid rgba(255,215,0,0.4);
+}
+
+tr:nth-child(even){
+    background:rgba(255,255,255,0.05);
+}
+
+.section-row{
+    background:rgba(255,215,0,0.2);
+    font-weight:bold;
+}
+
+.total-row{
+    background:rgba(255,215,0,0.15);
+    font-weight:bold;
+}
+
+.bench-player{
+    color:rgba(180,180,180,0.45);
+}
+
+.white-player{
+    color:white !important;
+}
+
+.invalid-player{
+    color:rgba(180,180,180,0.45);
+}
+
+.back-button{
+    display:inline-block;
+    margin-bottom:40px;
+    padding:12px 24px;
+    border:2px solid gold;
+    color:white;
+    text-decoration:none;
+    border-radius:10px;
+    transition:0.3s;
+}
+
+.back-button:hover{
+    background:rgba(255,215,0,0.2);
+}
+
+</style>
+</head>
+
+<body>
+
+<h1 class="page-title">SUPERCUP 2019</h1>
+
+<div class="match-result">
+WOLVERHAMPTON WANDERERS 4-1 57BOYS
+</div>
+
+<div class="table-container">
+
+<table>
+
+<thead>
+<tr>
+<th>R</th>
+<th>WOLVES</th>
+<th>SQ</th>
+<th>V</th>
+<th>FM</th>
+
+<th>R</th>
+<th>57BOYS</th>
+<th>SQ</th>
+<th>V</th>
+<th>FM</th>
+</tr>
+</thead>
+
+<tbody>
+
+<tr>
+<td>P</td><td>DONNARUMMA G</td><td>MIL</td><td>6</td><td>6</td>
+<td>P</td><td>SEPE</td><td>PAR</td><td>5,5</td><td>2,5</td>
+</tr>
+
+<tr>
+<td>D</td><td>CRISCITO</td><td>GEN</td><td>7</td><td>10</td>
+<td>D</td><td>DIJKS</td><td>BOL</td><td>6</td><td>6</td>
+</tr>
+
+<tr>
+<td>D</td><td>DI LORENZO</td><td>NAP</td><td>6,5</td><td>7,5</td>
+<td>D</td><td>KOULIBALY</td><td>NAP</td><td>6,5</td><td>6,5</td>
+</tr>
+
+<tr>
+<td>D</td><td class="invalid-player">D'AMBROSIO</td><td class="invalid-player">INT</td><td class="invalid-player">-</td><td class="invalid-player">-</td>
+<td>D</td><td>ROMAGNOLI A</td><td>MIL</td><td>6,5</td><td>6,5</td>
+</tr>
+
+<tr>
+<td>C</td><td class="invalid-player">DOUGLAS COSTA</td><td class="invalid-player">JUV</td><td class="invalid-player">-</td><td class="invalid-player">-</td>
+<td>C</td><td>ZIELINSKI</td><td>NAP</td><td>6,5</td><td>6,5</td>
+</tr>
+
+<tr>
+<td>C</td><td>MILINKOVIC-SAVIC</td><td>LAZ</td><td>5,5</td><td>5,5</td>
+<td>C</td><td>LUIS ALBERTO</td><td>LAZ</td><td>6</td><td>6</td>
+</tr>
+
+<tr>
+<td>C</td><td>SCHONE</td><td>GEN</td><td>5,5</td><td>5,5</td>
+<td>C</td><td>SORIANO</td><td>BOL</td><td>5,5</td><td>5</td>
+</tr>
+
+<tr>
+<td>C</td><td>RIBERY</td><td>FIO</td><td>7</td><td>7</td>
+<td>C</td><td>CALHANOGLU</td><td>MIL</td><td>6</td><td>6</td>
+</tr>
+
+<tr>
+<td>A</td><td>INGLESE</td><td>PAR</td><td>5,5</td><td>5,5</td>
+<td>A</td><td>LOZANO</td><td>NAP</td><td>6</td><td>6</td>
+</tr>
+
+<tr>
+<td>A</td><td>PINAMONTI</td><td>GEN</td><td>5,5</td><td>5,5</td>
+<td>A</td><td class="invalid-player">DYBALA</td><td class="invalid-player">JUV</td><td class="invalid-player">-</td><td class="invalid-player">-</td>
+</tr>
+
+<tr>
+<td>A</td><td>QUAGLIARELLA</td><td>SAM</td><td>6</td><td>6</td>
+<td>A</td><td>BERARDI</td><td>SAS</td><td>7,5</td><td>13,5</td>
+</tr>
+
+<tr class="section-row">
+<td colspan="5">PANCHINA</td>
+<td colspan="5">PANCHINA</td>
+</tr>
+
+<tr class="bench-player">
+<td>P</td><td>REINA</td><td>MIL</td><td>-</td><td>-</td>
+<td>P</td><td>DRAGOWSKI</td><td>FIO</td><td>6</td><td>6</td>
+</tr>
+
+<tr class="bench-player">
+<td>A</td><td>MURIEL</td><td>ATA</td><td>7</td><td>10</td>
+<td>A</td><td>BOGA</td><td>SAS</td><td>-</td><td>-</td>
+</tr>
+
+<tr class="bench-player">
+<td>C</td><td>KURTIC</td><td>SPA</td><td>7</td><td>11</td>
+<td>A</td><td>BENNACER</td><td>MIL</td><td>-</td><td>-</td>
+</tr>
+
+<tr class="bench-player">
+<td>C</td><td>LAZOVIC</td><td>VER</td><td>6</td><td>6</td>
+<td>C</td><td class="white-player">PAROLO</td><td class="white-player">LAZ</td><td class="white-player">6</td><td class="white-player">6</td>
+</tr>
+
+<tr class="bench-player">
+<td>D</td><td class="white-player">CEPPITELLI</td><td class="white-player">CAG</td><td class="white-player">8</td><td class="white-player">14,5</td>
+<td>A</td><td>PUSSETTO</td><td>UDI</td><td>-</td><td>-</td>
+</tr>
+
+<tr class="bench-player">
+<td>A</td><td>NESTOROVSKI</td><td>UDI</td><td>-</td><td>-</td>
+<td>D</td><td>GHOULAM</td><td>NAP</td><td>-</td><td>-</td>
+</tr>
+
+<tr class="bench-player">
+<td>D</td><td>HERNANDEZ T</td><td>MIL</td><td>-</td><td>-</td>
+<td>D</td><td>MILENKOVIC</td><td>FIO</td><td>6,5</td><td>6,5</td>
+</tr>
+
+<tr class="total-row">
+<td colspan="5">TOTALE: 84,00</td>
+<td colspan="5">TOTALE: 70,50</td>
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+<a href="supercup.html" class="back-button">
+ Torna alla SuperCup
+</a>
+
+</body>
+</html>
