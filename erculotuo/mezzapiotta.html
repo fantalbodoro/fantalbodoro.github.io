@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<title>MEZZAPIOTTA</title>
+
+<style>
+
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    color:white;
+    text-align:center;
+
+    /* sfondo banconote (18 circa per riga) */
+    background-image:url("50euro.png");
+    background-repeat:repeat;
+    background-size:calc(100vw / 18);
+}
+
+/* overlay scuro */
+body::before{
+    content:"";
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.65);
+    z-index:-1;
+}
+
+/* ===== TITOLO ===== */
+.title-container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:20px;
+    margin-top:30px;
+}
+
+.title-logo{
+    width:90px;
+    opacity:0;
+    transform:translateX(-30px);
+    animation:enter 1s ease-out forwards;
+}
+
+.title-logo.right{
+    transform:translateX(30px);
+}
+
+h1{
+    font-size:72px;
+    margin:0;
+    font-weight:bold;
+    letter-spacing:4px;
+    color:gold;
+    text-shadow:0 0 15px black;
+}
+
+@keyframes enter{
+    to{
+        opacity:1;
+        transform:translateX(0);
+    }
+}
+
+/* ===== TABELLA PRINCIPALE ===== */
+.table-container{
+    display:flex;
+    justify-content:center;
+    margin-top:25px;
+}
+
+table{
+    border-collapse:collapse;
+    background:rgba(0,0,0,0.8);
+    border:3px solid gold;
+    min-width:70%;
+}
+
+th, td{
+    border:2px solid gold;
+    padding:10px 16px;
+    text-align:center;
+}
+
+th{
+    background:gold;
+    color:black;
+    text-transform:uppercase;
+}
+
+tr:nth-child(even){
+    background:rgba(255,255,255,0.05);
+}
+
+/* ===== PALMARES ===== */
+h2{
+    margin-top:40px;
+    font-size:40px;
+    color:gold;
+    text-shadow:0 0 10px black;
+}
+
+.palmares-table{
+    margin:0 auto 40px auto;
+    border-collapse:collapse;
+    background:rgba(0,0,0,0.8);
+    border:3px solid gold;
+    min-width:40%;
+}
+
+.palmares-table th,
+.palmares-table td{
+    border:2px solid gold;
+    padding:10px 16px;
+}
+
+.palmares-table th{
+    background:gold;
+    color:black;
+}
+
+/* bottone */
+.back-button{
+    display:inline-block;
+    margin-top:20px;
+    padding:12px 24px;
+    border:2px solid gold;
+    color:white;
+    text-decoration:none;
+    border-radius:10px;
+    transition:0.3s;
+}
+
+.back-button:hover{
+    background:gold;
+    color:black;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="title-container">
+
+    <img src="mezzapiotta.png" class="title-logo" alt="logo">
+
+    <h1>M€ZZAPIOTTA</h1>
+
+    <img src="mezzapiotta.png" class="title-logo right" alt="logo">
+
+</div>
+
+<div class="table-container">
+
+<table>
+<thead>
+<tr>
+<th>Stagione</th>
+<th>Allenatore</th>
+<th>Squadra</th>
+</tr>
+</thead>
+
+<tbody>
+<tr><td>2004-05</td><td>EMILIANO</td><td>FILU 'E FERRU</td></tr>
+<tr><td>2016-17</td><td>DARIO</td><td>WINNING ELEVEN</td></tr>
+<tr><td>2017-18</td><td>BINOMIO</td><td>GAMBIZZATORI</td></tr>
+<tr><td>2018-19</td><td>PAOLO</td><td>57 BOYS</td></tr>
+<tr><td>2019-20</td><td>DAMIANO</td><td>THE STARS</td></tr>
+<tr><td>2020-21</td><td>ANDREA</td><td>TEAM AUDERO</td></tr>
+<tr><td>2021-22</td><td>ALEX</td><td>SYOB75</td></tr>
+<tr><td>2022-23</td><td>FRANCESCO</td><td>BAYER LAVINKUSEN</td></tr>
+<tr><td>2023-24</td><td>FRANCESCO</td><td>BAYER LAVINKUSEN</td></tr>
+<tr><td>2024-25</td><td>DARIO</td><td>WINNING ELEVEN</td></tr>
+</tbody>
+
+</table>
+
+</div>
+
+<h2>PALMARES</h2>
+
+<table class="palmares-table">
+<thead>
+<tr>
+<th>Allenatore</th>
+<th>Titoli</th>
+</tr>
+</thead>
+
+<tbody>
+<tr><td>DARIO</td><td>2</td></tr>
+<tr><td>FRANCESCO</td><td>2</td></tr>
+<tr><td>EMILIANO</td><td>1</td></tr>
+<tr><td>BINOMIO</td><td>1</td></tr>
+<tr><td>PAOLO</td><td>1</td></tr>
+<tr><td>DAMIANO</td><td>1</td></tr>
+<tr><td>ANDREA</td><td>1</td></tr>
+<tr><td>ALEX</td><td>1</td></tr>
+</tbody>
+
+</table>
+
+<a href="erculotuo.html" class="back-button">Torna a Erculotuo</a>
+
+</body>
+</html>
