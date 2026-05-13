@@ -2,16 +2,7 @@
 <html lang="it">
 <head>
 <meta charset="UTF-8">
-<title>SuperCup
-    <div class="supercup-header">
-
-    <img src="supercup.png" class="supercup-logo" alt="SuperCup">
-
-    <h1 class="supercup-title">SUPERCUP</h1>
-
-    <img src="supercup.png" class="supercup-logo" alt="SuperCup">
-
-</div></title>
+<title>SuperCup</title>
 
 <style>
 
@@ -19,23 +10,12 @@ body{
     margin:0;
     padding:0;
     font-family:Arial, sans-serif;
-    background:
-        radial-gradient(circle at top, #3a2a00 0%, #120b00 40%, #000 100%);
+    background: radial-gradient(circle at top, #3a2a00 0%, #120b00 40%, #000 100%);
     color:white;
     text-align:center;
 }
 
-/* TITOLO EPICO */
-    <div class="supercup-header">
-
-    <img src="supercup.png" class="supercup-logo" alt="SuperCup">
-
-    <h1 class="supercup-title">SUPERCUP</h1>
-
-    <img src="supercup.png" class="supercup-logo" alt="SuperCup">
-
-</div>
-
+/* TITOLO */
 .supercup-title{
     font-size:72px;
     margin-top:30px;
@@ -44,14 +24,7 @@ body{
     text-transform:uppercase;
     letter-spacing:5px;
 
-    background:linear-gradient(
-        180deg,
-        #fff8c7 0%,
-        #ffd700 40%,
-        #d4a000 70%,
-        #8b6508 100%
-    );
-
+    background:linear-gradient(180deg,#fff8c7 0%,#ffd700 40%,#d4a000 70%,#8b6508 100%);
     -webkit-background-clip:text;
     -webkit-text-fill-color:transparent;
 
@@ -62,10 +35,9 @@ body{
         4px 4px 8px rgba(0,0,0,0.8);
 }
 
-/* TABELLA */
-
+/* TABELLE */
 .supercup-table{
-    width:95%;
+    width:auto;
     margin:auto;
     border-collapse:collapse;
     background:rgba(0,0,0,0.35);
@@ -73,66 +45,30 @@ body{
     box-shadow:0 0 25px rgba(255,215,0,0.5);
     margin-bottom:50px;
 }
-.supercup-header{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    gap:25px;
-    margin-top:20px;
-    margin-bottom:25px;
-}
 
-.supercup-logo{
-    width:90px;
-    height:auto;
-
-    filter:
-        drop-shadow(0 0 10px rgba(255,215,0,0.8))
-        drop-shadow(0 0 20px rgba(255,215,0,0.5));
-}
-
-.supercup-title{
-    font-size:72px;
-    font-weight:bold;
-    letter-spacing:5px;
-
-    background:linear-gradient(
-        180deg,
-        #fff8c7 0%,
-        #ffd700 40%,
-        #d4a000 70%,
-        #8b6508 100%
-    );
-
-    -webkit-background-clip:text;
-    -webkit-text-fill-color:transparent;
-
-    text-shadow:
-        0 0 5px rgba(255,215,0,0.8),
-        0 0 10px rgba(255,215,0,0.7),
-        0 0 20px rgba(255,215,0,0.6),
-        4px 4px 8px rgba(0,0,0,0.8);
-}
+/* HEADER */
 .supercup-table th{
-    background:linear-gradient(
-        180deg,
-        #ffd700 0%,
-        #b8860b 100%
-    );
-
+    background:linear-gradient(180deg,#ffd700 0%,#b8860b 100%);
     color:black;
-    padding:14px;
+
+    padding:6px 10px;         /* leggermente più spazio */
+    font-size:16px;
+    letter-spacing:0px;
     text-transform:uppercase;
-    letter-spacing:2px;
-    font-size:18px;
+
+    border:1px solid gold;    /* uguale al bordo esterno */
 }
 
+/* CELLE */
 .supercup-table td{
-    padding:12px;
-    border:1px solid rgba(255,215,0,0.4);
-    font-size:17px;
+    padding:5px 10px;         /* più leggibile ma ancora compatto */
+    font-size:15px;
+
+    border:1px solid gold;    /* stesso colore bordo esterno */
+    white-space:nowrap;
 }
 
+/* RIGHE */
 .supercup-table tr:nth-child(even){
     background:rgba(255,255,255,0.05);
 }
@@ -141,47 +77,28 @@ body{
     background:rgba(255,215,0,0.15);
 }
 
-/* PALMARES */
-
-.palmares-title{
-    font-size:48px;
-    margin-top:20px;
-    margin-bottom:25px;
-
-    background:linear-gradient(
-        180deg,
-        #fff8c7 0%,
-        #ffd700 40%,
-        #d4a000 70%,
-        #8b6508 100%
-    );
-
-    -webkit-background-clip:text;
-    -webkit-text-fill-color:transparent;
-
-    text-shadow:
-        0 0 5px rgba(255,215,0,0.8),
-        0 0 10px rgba(255,215,0,0.7),
-        0 0 20px rgba(255,215,0,0.6),
-        4px 4px 8px rgba(0,0,0,0.8);
-}
-/* LINK RISULTATI */
-
+/* LINK */
 .match-link{
     color:#ffe680;
     text-decoration:none;
     font-weight:bold;
-    transition:0.2s;
 }
 
 .match-link:hover{
     color:white;
-
-    text-shadow:
-        0 0 5px gold,
-        0 0 10px gold,
-        0 0 20px gold;
+    text-shadow:0 0 5px gold,0 0 10px gold;
 }
+
+/* PALMARES */
+.palmares-title{
+    font-size:48px;
+    margin:20px 0;
+
+    background:linear-gradient(180deg,#fff8c7 0%,#ffd700 40%,#d4a000 70%,#8b6508 100%);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
 </style>
 </head>
 
@@ -189,6 +106,7 @@ body{
 
 <h1 class="supercup-title">SUPERCUP</h1>
 
+<!-- TABELLONE STORIA -->
 <table class="supercup-table">
 
 <thead>
@@ -202,161 +120,102 @@ body{
 
 <tbody>
 
-<tbody>
-
-<tbody>
-
 <tr>
 <td>2013</td>
 <td>Winning Eleven (Dario)</td>
-<td>
-<a href="sc2013.html" class="match-link">
-2-2 (3-2 dcr)
-</a>
-</td>
+<td><a class="match-link" href="sc2013.html">2-2 (3-2 dcr)</a></td>
 <td>Black Magic (Franz)</td>
 </tr>
 
 <tr>
 <td>2014</td>
 <td>Spider Pork (Andrea)</td>
-<td>
-<a href="sc2014.html" class="match-link">
-0-0 (3-2 dcr)
-</a>
-</td>
-<td>Borgorosso (Francesco)</td>    
+<td><a class="match-link" href="sc2014.html">0-0 (3-2 dcr)</a></td>
+<td>Borgorosso (Francesco)</td>
 </tr>
 
 <tr>
 <td>2015</td>
 <td>WLF (Marco P)</td>
-<td>
-<a href="sc2015.html" class="match-link">
-1-1 (5-3 dcr)
-</a>
-</td>
+<td><a class="match-link" href="sc2015.html">1-1 (5-3 dcr)</a></td>
 <td>Real Demo (Demo)</td>
 </tr>
 
 <tr>
 <td>2016</td>
 <td>The Stars (Damiano)</td>
-<td>
-<a href="sc2016.html" class="match-link">
-3-2
-</a>
-</td>
-<td>57 Boys (Paolo)</td>    
+<td><a class="match-link" href="sc2016.html">3-2</a></td>
+<td>57 Boys (Paolo)</td>
 </tr>
 
 <tr>
 <td>2017</td>
 <td>The Stars (Damiano)</td>
-<td>
-<a href="sc2017.html" class="match-link">
-3-1
-</a>
-</td>
-<td>57 Boys (Paolo)</td>    
+<td><a class="match-link" href="sc2017.html">3-1</a></td>
+<td>57 Boys (Paolo)</td>
 </tr>
 
 <tr>
 <td>2018</td>
 <td>57 Boys (Paolo)</td>
-<td>
-<a href="sc2018.html" class="match-link">
-3-1
-</a>
-</td>
-<td>Ac Tuan (Daniele)</td>    
+<td><a class="match-link" href="sc2018.html">3-1</a></td>
+<td>Ac Tuan (Daniele)</td>
 </tr>
 
 <tr>
 <td>2019</td>
 <td>Wolverhampton (Andrea)</td>
-<td>
-<a href="sc2019.html" class="match-link">
-4-1
-</a>
-</td>
-<td>57 Boys (Paolo)</td>    
+<td><a class="match-link" href="sc2019.html">4-1</a></td>
+<td>57 Boys (Paolo)</td>
 </tr>
 
 <tr>
 <td>2020</td>
 <td>Longobarda (Demo)</td>
-<td>
-<a href="sc2020.html" class="match-link">
-3-2
-</a>
-</td>
-<td>Winning Eleven (Dario)</td>    
+<td><a class="match-link" href="sc2020.html">3-2</a></td>
+<td>Winning Eleven (Dario)</td>
 </tr>
 
 <tr>
 <td>2021</td>
 <td>Syob 75 (Alex)</td>
-<td>
-<a href="sc2021.html" class="match-link">
-1-0
-</a>
-</td>
-<td>Fc Fornaretto (Simone)</td>    
+<td><a class="match-link" href="sc2021.html">1-0</a></td>
+<td>Fc Fornaretto (Simone)</td>
 </tr>
 
 <tr>
 <td>2022</td>
 <td>Syob 75 (Alex)</td>
-<td>
-<a href="sc2022.html" class="match-link">
-2-0
-</a>
-</td>
-<td>The Stars (Damiano)</td>    
+<td><a class="match-link" href="sc2022.html">2-0</a></td>
+<td>The Stars (Damiano)</td>
 </tr>
 
 <tr>
 <td>2023</td>
 <td>Fc Fornaretto (Simone)</td>
-<td>
-<a href="sc2023.html" class="match-link">
-3-0
-</a>
-</td>
-<td>Stsohg 75 (Alex)</td>    
+<td><a class="match-link" href="sc2023.html">3-0</a></td>
+<td>Stsohg 75 (Alex)</td>
 </tr>
 
 <tr>
 <td>2024</td>
 <td>Stoke Azzo (Binomio)</td>
-<td>
-<a href="sc2024.html" class="match-link">
-3-0
-</a>
-</td>
-<td>Winning Eleven (Dario)</td>    
+<td><a class="match-link" href="sc2024.html">3-0</a></td>
+<td>Winning Eleven (Dario)</td>
 </tr>
 
 <tr>
 <td>2025</td>
 <td>Longobarda (Demo)</td>
-<td>
-<a href="sc2025.html" class="match-link">
-1-1 (3-2 dcr)
-</a>
-</td>
-<td>Winning Eleven (Dario)</td>    
+<td><a class="match-link" href="sc2025.html">1-1 (3-2 dcr)</a></td>
+<td>Winning Eleven (Dario)</td>
 </tr>
-
-</tbody>
-
-</tbody>
 
 </tbody>
 </table>
 
-<h2 class="palmares-title">PALMARÈS</h2>
+<!-- PALMARES -->
+<h2 class="palmares-title">PALMARES</h2>
 
 <table class="supercup-table">
 
@@ -368,58 +227,18 @@ body{
 </thead>
 
 <tbody>
-
-<tr>
-<td>Damiano</td>
-<td>2</td>
-</tr>
-
-<tr>
-<td>Demo</td>
-<td>2</td>
-</tr>
-
-<tr>
-<td>Alex</td>
-<td>2</td>
-</tr>
-
-<tr>
-<td>Dario</td>
-<td>1</td>
-</tr>
-
-<tr>
-<td>Francesco</td>
-<td>1</td>
-</tr>
-
-<tr>
-<td>Paolo</td>
-<td>1</td>
-</tr>
-
-<tr>
-<td>Andrea</td>
-<td>1</td>
-</tr>
-
-<tr>
-<td>Simone</td>
-<td>1</td>
-</tr>
-
-<tr>
-<td>Daniele</td>
-<td>1</td>
-</tr>
-
-<tr>
-<td>WLF</td>
-<td>1</td>
-</tr>
-
+<tr><td>Damiano</td><td>2</td></tr>
+<tr><td>Demo</td><td>2</td></tr>
+<tr><td>Alex</td><td>2</td></tr>
+<tr><td>Dario</td><td>1</td></tr>
+<tr><td>Francesco</td><td>1</td></tr>
+<tr><td>Paolo</td><td>1</td></tr>
+<tr><td>Andrea</td><td>1</td></tr>
+<tr><td>Simone</td><td>1</td></tr>
+<tr><td>Daniele</td><td>1</td></tr>
+<tr><td>WLF</td><td>1</td></tr>
 </tbody>
+
 </table>
 
 </body>
