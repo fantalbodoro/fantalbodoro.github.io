@@ -91,7 +91,9 @@ h1{
 /* SUPERLEAGUE AL CENTRO */
 
 .superleague img{
-    width:min(240px, 55vw);
+    width:220px;
+    height:220px;
+    object-fit:contain;
 }
 
 /* RIGA CENTRALE */
@@ -101,19 +103,23 @@ h1{
     display:flex;
     justify-content:center;
     align-items:center;
-    gap:min(15vw, 140px);
+    gap:220px; /* più distanza tra erculotuo e fantademo */
 }
 
 /* LOGHI LATERALI */
 
 .middle-row img{
-    width:min(180px, 35vw);
+    width:220px;
+    height:220px;
+    object-fit:contain;
 }
 
 /* LOGO BASSO */
 
 .fantapazzi img{
-    width:min(200px, 45vw);
+    width:220px;
+    height:220px;
+    object-fit:contain;
 }
 
 /* ===== EFFETTI HOVER ===== */
@@ -134,15 +140,14 @@ a:hover{
 @media(max-width:700px){
 
     .middle-row{
-        gap:25px;
+        gap:40px;
     }
 
-    .middle-row img{
-        width:38vw;
-    }
-
+    .superleague img,
+    .middle-row img,
     .fantapazzi img{
-        width:42vw;
+        width:38vw;
+        height:38vw;
     }
 }
 
